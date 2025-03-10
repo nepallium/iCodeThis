@@ -1,41 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Field</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+    </style>
 </head>
-<body>
-    <div class="container">
-        <div class="title">
-            <p>Enter your password</p>
-        </div>
-        <div class="profile">
-            <img alt="profile picture" src="">
-            <div class="user-info">
-                <div>Business Account</div>
-                <div>Johnny Lee</div>
-            </div>
-        </div>
 
-        <form method="post" action="./">
-            <div class="password">
+<body>
+    <div class="bg">
+        <div class="container">
+            <div class="title">
+                <p>Enter your password</p>
+            </div>
+            <div class="profile">
+                <img alt="profile picture" src="resources/file.svg">
+                <div class="user-info">
+                    <div id="account-type">Business Account</div>
+                    <div id="name">Johnny Lee</div>
+                </div>
+            </div>
+
+            <form method="post" action="./">
+                <div class="password">
                     <label for="pwd">Password</label>
                     <input type="password" id="pwd" name="password" required>
-                </form>
-            </div>
+            </form>
+        </div>
 
-            <div class="options">
-                <label class="toggle-rmber">
-                    <input type="checkbox">
-                </label>
-                <button type="submit" id="submit">Continue</button>
-            </div>
+        <div class="options">
+            <label class="toggle-rmber">
+                <input type="checkbox">
+            </label>
+            <button type="submit" id="submit">Continue</button>
+        </div>
         </form>
 
         <div>
             <a href="#">Reset password</a>
         </div>
     </div>
+    </div>
 </body>
+
 </html>

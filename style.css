@@ -1,0 +1,75 @@
+* {
+    font-family: "Varela Round", sans-serif;
+    font-style: normal;
+    color: #1c3052;
+
+}
+
+.bg {
+    background-color: #f6f7f8;
+    height: 100vh;
+    max-width: 1000px;
+    margin: auto;
+    
+    /* Center the login section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #ffffff;
+    min-height: 65%;
+    min-width: 60%;
+    padding: 4rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.container > .title {
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
+
+/* PROFILE */
+.profile {
+    display: flex;
+    gap: 1rem;
+    align-items: stretch;
+}
+
+.profile > .user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#account-type {
+    font-size: 0.9rem;
+}
+
+#name {
+    font-weight: bold;
+}
+
+.profile > img {
+    height: 64px;
+}
+
+
+
+/* PASSWORD ENTER */
+
+
+
+
+
+/* OPTIONS */
+.options {
+    display: flex;
+}
