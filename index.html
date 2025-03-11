@@ -27,27 +27,30 @@
                 </div>
             </div>
 
-            <form method="post" action="./">
+            <form id="loginInfo" method="post" action="https://httpbin.org/post">
                 <div class="password">
                     <label for="pwd">Password</label>
                     <div class="input-sect">
                         <input type="password" id="pwd" name="password" required>
                         <input type="checkbox" id="visibility">
                         <label for="visibility">
-                            <img class="visibility" src="resources/visibility_off_16dp_304565_FILL0_wght200_GRAD0_opsz20.svg">
+                            <img class="visibility"
+                                src="resources/visibility_off_16dp_304565_FILL0_wght200_GRAD0_opsz20.svg">
                         </label>
                     </div>
-                    
                 </div>
             </form>
 
-            <div class="options">
-                <label class="toggle-rmber">
-                    <input type="checkbox">
-                </label>
-                <button type="submit" id="submit">Continue</button>
+            <div class="options-container">
+                <div class="options">
+                    <div class="remember">
+                        <input type="checkbox" id="rmber" name="remember_me" value="yes" form="loginInfo">
+                        <label class="remember_me" for="rmber">Stay logged in</label>
+                    </div>
+                    <button type="submit" id="submit" form="loginInfo">Continue</button>
+                </div>
+                <div class="filler"></div>
             </div>
-            </form>
 
             <div>
                 <a href="#">Reset password</a>

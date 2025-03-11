@@ -1,7 +1,7 @@
 * {
     font-family: "Varela Round", sans-serif;
     font-style: normal;
-    /* color: #304565; */
+    --d-blue: #132b50;
 
 }
 
@@ -19,7 +19,7 @@
 
 .container {
     background-color: #ffffff;
-    min-height: 65%;
+    min-height: 60%;
     min-width: 60%;
     padding: 4rem;
 
@@ -106,9 +106,93 @@ img.visibility {
 }
 
 
-
-
 /* OPTIONS */
-.options {
+/* Align "Continue" with input box by using same flex settings as the .password container*/
+.options-container {
     display: flex;
+    gap: 0.5rem;
+}
+
+.options-container .filler {
+    width: 30px;
+}
+
+
+.options {
+    flex: 1;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+/* TOGGLE SWITCH */
+/* Create outer toggle area */
+.remember {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+#rmber {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 44px;
+    height: 24px;
+    border-radius: 12px;
+    border: 1px solid var(--d-blue);
+    transition: all 0.4s;
+}
+
+/* Inner button thing */
+#rmber::before {
+    width: 16px;
+    height: 16px;
+    border-radius: 9px;
+    background-color: var(--d-blue);
+    content: '';
+    
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+
+    transition: all 0.4s;
+}
+
+/* Switch transition */
+#rmber:checked {
+    background-color: #dbf3fa;
+    transition: all 0.4s;
+}
+#rmber:checked::before {
+    left: 23px;;
+    transition: all 0.4s;
+}
+
+
+/* Continue button */
+#submit {
+    color: white;
+    background-color: var(--d-blue);
+    border-radius: 5px;
+    padding: 12px 14px;
+    border-style: none;
+}
+
+
+/* Reset pswd link */
+a:link {
+    color: var(--d-blue);
+    font-weight: bold;
+}
+
+a:hover {
+    color: #70a9ff;
+}
+
+
+/* Make cursor become pointer when hovering over clickable content */
+img.visibility:hover, #rmber:hover, #submit:hover {
+    cursor: pointer;
 }
