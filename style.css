@@ -2,7 +2,7 @@
     font-family: "Varela Round", sans-serif;
     font-style: normal;
     --d-blue: #132b50;
-
+    color: var(--d-blue);
 }
 
 .bg {
