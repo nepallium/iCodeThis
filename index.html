@@ -7,7 +7,7 @@
     <title>Password Field</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
     </style>
@@ -30,22 +30,29 @@
             <form method="post" action="./">
                 <div class="password">
                     <label for="pwd">Password</label>
-                    <input type="password" id="pwd" name="password" required>
+                    <div class="input-sect">
+                        <input type="password" id="pwd" name="password" required>
+                        <input type="checkbox" id="visibility">
+                        <label for="visibility">
+                            <img class="visibility" src="resources/visibility_off_16dp_304565_FILL0_wght200_GRAD0_opsz20.svg">
+                        </label>
+                    </div>
+                    
+                </div>
             </form>
-        </div>
 
-        <div class="options">
-            <label class="toggle-rmber">
-                <input type="checkbox">
-            </label>
-            <button type="submit" id="submit">Continue</button>
-        </div>
-        </form>
+            <div class="options">
+                <label class="toggle-rmber">
+                    <input type="checkbox">
+                </label>
+                <button type="submit" id="submit">Continue</button>
+            </div>
+            </form>
 
-        <div>
-            <a href="#">Reset password</a>
+            <div>
+                <a href="#">Reset password</a>
+            </div>
         </div>
-    </div>
     </div>
 </body>
 

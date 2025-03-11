@@ -1,7 +1,7 @@
 * {
     font-family: "Varela Round", sans-serif;
     font-style: normal;
-    color: #1c3052;
+    /* color: #304565; */
 
 }
 
@@ -59,12 +59,51 @@
 
 .profile > img {
     height: 64px;
+    color: black;
 }
 
 
 
 /* PASSWORD ENTER */
+.password {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 
+}
+
+.password label {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* password input section (box + visibility) */
+.password .input-sect {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.password input#pwd {
+    border: 1px solid #304565;
+    height: 3rem;
+    flex: 1;
+
+    background-image: url('resources/lock_16dp_304565_FILL0_wght200_GRAD0_opsz20.svg');
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-size: 30px;
+    padding: 12px 45px;
+}
+
+
+input[type="checkbox"]#visibility {
+    display: none;
+}
+
+img.visibility {
+    height: 30px;
+}
 
 
 
